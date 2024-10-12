@@ -1,0 +1,35 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksIm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNzI2NDE0NTc2LCJleHAiOjE3MjY0MTQ1OTZ9.prVpvETodllBUczf5_xgNErs8nhtC5DtsR5z4YhPp3E
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": "@dmin",
+    "confPassword": "@dmin"
+}
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "plak@gmail.com",
+    "password": "12345"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+//***************************************************************************************************
+//Device
+###
+GET http://localhost:5000/devices
+
+//************************************
+###
+GET http://localhost:5000/historys
